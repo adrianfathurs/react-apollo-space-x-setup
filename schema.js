@@ -9,6 +9,7 @@ const LaunchType = new GraphQLObjectType({
   fields: () => ({
     id: {type:GraphQLString},
     flight_number: { type: GraphQLInt },
+    launchpad:{ type: GraphQLString},
     name: {type:GraphQLString},
     cores:{
       type: new GraphQLList(CoresType) ,
